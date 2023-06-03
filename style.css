@@ -11,12 +11,14 @@ font-family: Arial, Helvetica, sans-serif;
     background-position: center;
 }
 .navbar{
-    width: 95%;
+    width: 90%;
     margin: auto;
     padding: 25px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 30px;
+   
 }
 .logo{
 width: 150px;
@@ -61,6 +63,7 @@ cursor: pointer;
 .content h1{
 font size: 70px;
 margin-top: 80px;
+
 }
 
 button{
@@ -80,7 +83,7 @@ button{
 }
 
 span{
-background: whitesmoke;
+background: white;
 height: 100%;
 width: 0;
 border-radius: 20px;
@@ -109,4 +112,73 @@ button:hover{
         width: 100%;
         height: auto;
     }
+}
+.container{
+display: flex;
+max-width: 1224px;
+width: 90%;
+margin: auto;
+padding: 40px;
+
+}
+.photo-gallery{
+    display: flex;
+    gap: 30px;
+    
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+   
+}
+.photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    filter: grayscale(200%);
+    transition: 1s;
+    box-shadow: 5px 5px 10px red;
+    display: flex;
+    overflow: hidden;
+    
+}
+.photo img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+    box-shadow: 2px 2px 5px white
+}
+.photo{
+    display: flex;
+}
+
+@media (max-width:768px) {
+    .photo-gallery{
+        flex-direction: column;
+    }
+    
+}
+
+.intro{
+    height: 200px;
+    width: 280px;
+    padding: 6px;
+    box-sizing: border-box;
+    color: red;
+}
+
+.card{
+    width: 100%;
+    height: auto;
+    padding: 2rem 1rem;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover{
+    transform: translateY(20px);
 }
