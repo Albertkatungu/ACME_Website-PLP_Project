@@ -119,6 +119,7 @@ max-width: 1224px;
 width: 90%;
 margin: auto;
 padding: 40px;
+color: white;
 
 }
 .photo-gallery{
@@ -181,4 +182,9 @@ padding: 40px;
 
 .card:hover{
     transform: translateY(20px);
+}
+
+.icons{
+    height: 40px;
+    width: 45px;
 }
